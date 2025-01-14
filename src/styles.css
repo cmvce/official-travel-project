@@ -1,0 +1,14 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background: #d1c0ad6d;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 160px 0;
+}
