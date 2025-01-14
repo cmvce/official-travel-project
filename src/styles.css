@@ -16,9 +16,47 @@ body {
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3-cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #050505;
+  text-decoration: none;
+}
 .img-responsive {
   width: 100%;
   display: block;
+  aspect-ratio: 1/1;
+}
+.text-center {
+  text-align: center;
 }
 section {
   max-width: 100%;
@@ -160,5 +198,11 @@ footer a:hover {
 
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
