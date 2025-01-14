@@ -2,6 +2,29 @@ body {
   font-family: "Raleway", sans-serif;
   background: #d1c0ad6d;
 }
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -50,9 +73,65 @@ header a {
   border-radius: 20px;
 }
 
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: black;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: black;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  opacity: 0.7;
+}
+
+footer {
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+footer a {
+  color: rgb(122, 100, 34, 1);
+  opacity: 0.7;
+}
 @media (max-width: 900px) {
   header {
-    padding: 60px 0;
+    padding: 80px 0;
   }
   header h1 {
     font-size: 48px;
@@ -64,9 +143,15 @@ header a {
     font-size: 12px;
   }
   header a {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 10px;
-    margin-top: 16px;
+    padding: 15px 30px;
+    border-radius: 15px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
