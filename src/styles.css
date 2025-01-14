@@ -53,6 +53,8 @@ body {
 .img-responsive {
   width: 100%;
   display: block;
+}
+.card-img {
   aspect-ratio: 1/1;
 }
 .text-center {
@@ -63,7 +65,9 @@ section {
   margin: 0 auto;
   padding: 100px 0;
 }
-
+section.secondary {
+  background: #f8f8f8;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("/images/musee-elysee.jpg");
