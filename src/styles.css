@@ -54,6 +54,31 @@ body {
   width: 100%;
   display: block;
 }
+.grid-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
+  padding: 50px;
+}
+
+.item {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.laus-img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.item:hover {
+  transform: scale(1.5);
+  opacity: 100%;
+}
 .card-img {
   aspect-ratio: 1/1;
 }
